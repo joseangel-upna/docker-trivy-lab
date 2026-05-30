@@ -1,9 +1,11 @@
 name: Análisis de Seguridad con Trivy
 
 # Se ejecuta automáticamente en:
+# - de forma manual
 # - push a la rama main
 # - pull requests
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
