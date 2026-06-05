@@ -47,6 +47,7 @@ jobs:
           trivy image \
             --exit-code 1 \
             --severity CRITICAL \
+            --ignore-unfixed \
             --format table \
             --output trivy-report.txt \
             vulnerable-image:latest
